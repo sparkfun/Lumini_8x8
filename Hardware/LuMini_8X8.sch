@@ -15886,12 +15886,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J14" library="SparkFun-Connectors" deviceset="LED_PAD" device=""/>
 <part name="J15" library="SparkFun-Connectors" deviceset="LED_PAD" device=""/>
 <part name="J16" library="SparkFun-Connectors" deviceset="LED_PAD" device=""/>
-<part name="SUPPLY67" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
 <part name="FD1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 <part name="FD2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 <part name="FD3" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 <part name="FD4" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
+<part name="GND66" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16130,12 +16130,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="J14" gate="G$1" x="132.08" y="45.72" rot="R180"/>
 <instance part="J15" gate="G$1" x="132.08" y="35.56" rot="R180"/>
 <instance part="J16" gate="G$1" x="132.08" y="25.4" rot="R180"/>
-<instance part="SUPPLY67" gate="G$1" x="226.06" y="63.5"/>
 <instance part="LOGO2" gate="G$1" x="408.94" y="48.26"/>
 <instance part="FD1" gate="G$1" x="408.94" y="20.32"/>
 <instance part="FD2" gate="G$1" x="411.48" y="20.32"/>
 <instance part="FD3" gate="G$1" x="414.02" y="20.32"/>
 <instance part="FD4" gate="G$1" x="416.56" y="20.32"/>
+<instance part="GND66" gate="1" x="226.06" y="5.08"/>
 </instances>
 <busses>
 </busses>
@@ -16548,6 +16548,24 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="GND67" gate="1" pin="GND"/>
 <wire x1="292.1" y1="33.02" x2="292.1" y2="35.56" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="H4" gate="G$1" pin="P$1"/>
+<wire x1="223.52" y1="60.96" x2="226.06" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="60.96" x2="226.06" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="H3" gate="G$1" pin="P$1"/>
+<wire x1="226.06" y1="45.72" x2="226.06" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="30.48" x2="226.06" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="15.24" x2="226.06" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="H2" gate="G$1" pin="P$1"/>
+<wire x1="223.52" y1="30.48" x2="226.06" y2="30.48" width="0.1524" layer="91"/>
+<junction x="226.06" y="30.48"/>
+<pinref part="H1" gate="G$1" pin="P$1"/>
+<wire x1="223.52" y1="45.72" x2="226.06" y2="45.72" width="0.1524" layer="91"/>
+<junction x="226.06" y="45.72"/>
+<pinref part="GND66" gate="1" pin="GND"/>
+<wire x1="226.06" y1="15.24" x2="226.06" y2="7.62" width="0.1524" layer="91"/>
+<junction x="226.06" y="15.24"/>
+</segment>
 </net>
 <net name="5V" class="0">
 <segment>
@@ -16956,24 +16974,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="SUPPLY66" gate="G$1" pin="5V"/>
 <wire x1="292.1" y1="45.72" x2="292.1" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="H4" gate="G$1" pin="P$1"/>
-<wire x1="223.52" y1="60.96" x2="226.06" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="60.96" x2="226.06" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="H3" gate="G$1" pin="P$1"/>
-<wire x1="226.06" y1="45.72" x2="226.06" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="30.48" x2="226.06" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="15.24" x2="226.06" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="H2" gate="G$1" pin="P$1"/>
-<wire x1="223.52" y1="30.48" x2="226.06" y2="30.48" width="0.1524" layer="91"/>
-<junction x="226.06" y="30.48"/>
-<pinref part="H1" gate="G$1" pin="P$1"/>
-<wire x1="223.52" y1="45.72" x2="226.06" y2="45.72" width="0.1524" layer="91"/>
-<junction x="226.06" y="45.72"/>
-<pinref part="SUPPLY67" gate="G$1" pin="5V"/>
-<wire x1="226.06" y1="63.5" x2="226.06" y2="60.96" width="0.1524" layer="91"/>
-<junction x="226.06" y="60.96"/>
 </segment>
 </net>
 <net name="N$1" class="0">
