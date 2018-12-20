@@ -205,7 +205,7 @@
 <hole x="33.401" y="0" drill="0.635"/>
 <text x="7.62" y="-27.94" size="2.54" layer="51" font="vector">Black PCB
 4 layer board</text>
-<text x="32.73425" y="0.15875" size="1.27" layer="16" font="vector" ratio="15" rot="SMR0">v03</text>
+<text x="32.73425" y="0.15875" size="1.27" layer="16" font="vector" ratio="15" rot="SMR0">v10</text>
 <dimension x1="3.81" y1="21.59" x2="36.83" y2="21.59" x3="20.32" y3="29.21" textsize="1.27" textratio="15" layer="47" unit="inch"/>
 <dimension x1="0" y1="21.59" x2="40.64" y2="21.59" x3="20.32" y3="31.75" textsize="1.27" textratio="15" layer="47" unit="inch"/>
 <dimension x1="7.62" y1="25.4" x2="33.02" y2="25.4" x3="20.32" y3="26.67" textsize="1.27" textratio="15" layer="47" unit="inch"/>

@@ -15896,7 +15896,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="431.8" y1="78.74" x2="259.08" y2="78.74" width="0.2032" layer="97" style="longdash"/>
 <text x="193.04" y="71.12" size="2.54" layer="97" font="vector">Heat Sinking Standoffs</text>
 <text x="348.488" y="11.43" size="2.54" layer="94" font="vector">Andy England</text>
-<text x="419.1" y="7.112" size="2.54" layer="94" font="vector">v02</text>
+<text x="419.1" y="7.112" size="2.54" layer="94" font="vector">v10</text>
 <text x="58.42" y="71.12" size="2.54" layer="97" font="vector">LED Connection Pads</text>
 <text x="271.78" y="66.04" size="2.54" layer="97" font="vector">Decoupling Capacitor</text>
 <wire x1="259.08" y1="78.74" x2="167.64" y2="78.74" width="0.2032" layer="97" style="longdash"/>
