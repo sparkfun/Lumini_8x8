@@ -81,16 +81,16 @@ void setup() {
 
 void loop() {
   static uint8_t hue = 0;
-  //Rotate around the circle
-  for (int y = 0; y < 16; y++)
+  //Draw vertical bars from left to right
+  for (int x = 0; x < 16; x++)
   {
-    for (int x = 0; x < 16; x++)
+    for (int y = 0; y < 16; y++)
     {
       // Set the i'th led to the current hue
       matrix[XY(x, y)] = CHSV(hue, 150, 255); //display the current hue, then increment it.
-      FastLED.show();
-      delay(20);
     }
+    FastLED.show();
+    delay(20);
     fadeAll(127);//Reduce the brightness of all LEDs so our LED's fade off with every frame.
     hue++;
   }
