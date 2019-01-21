@@ -82,9 +82,9 @@ void setup() {
 void loop() {
   static uint8_t hue = 0;
   //Draw vertical bars from left to right
-  for (int x = 0; x < 16; x++)
+  for (int x = 0; x < individualMatrixWidth * moduleWidth; x++)
   {
-    for (int y = 0; y < 16; y++)
+    for (int y = 0; y < individualMatrixHeight * moduleHeight; y++)
     {
       // Set the i'th led to the current hue
       matrix[XY(x, y)] = CHSV(hue, 150, 255); //display the current hue, then increment it.
