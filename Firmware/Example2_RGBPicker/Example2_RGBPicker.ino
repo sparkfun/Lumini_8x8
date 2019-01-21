@@ -1,9 +1,8 @@
 #include <FastLED.h>
 
-// How many leds in your strip?
-#define NUM_LEDS 60 //3 Inch
-//#define NUM_LEDS 40 //2 Inch
-//#define NUM_LEDS 20 //1 Inch
+// How many leds in your chain? Change the value of NUM_BOARDS depending on your setup
+#define NUM_BOARDS 1
+#define NUM_LEDS 64 * NUM_BOARDS //64 LED's per board
 
 //Data and Clock Pins
 #define DATA_PIN 16
@@ -13,12 +12,12 @@ CRGB color;
 char colorToEdit;
 
 // Define the array of leds
-CRGB ring[NUM_LEDS];
+CRGB matrix[NUM_LEDS];
 
 void setup() {
   Serial.begin(115200);
   Serial.println("resetting");
-  LEDS.addLeds<APA102, DATA_PIN, CLOCK_PIN, BGR>(ring, NUM_LEDS);
+  LEDS.addLeds<APA102, DATA_PIN, CLOCK_PIN, BGR>(matrix, NUM_LEDS);
   LEDS.setBrightness(32);
 
   //Display our current color data
@@ -61,7 +60,7 @@ void loop()
     Serial.println();
     for (int i = 0; i < NUM_LEDS; i++)
     {
-      ring[i] = color;
+      matrix[i] = color;
       FastLED.show();
       delay(10);
     }

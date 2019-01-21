@@ -4,7 +4,7 @@
 #define NUM_MATRICES 4
 #define NUM_LEDS 64 * NUM_MATRICES
 
-// The LuMini matrixs need two data pins connected
+// The LuMini matrices need two data pins connected
 #define DATA_PIN 16
 #define CLOCK_PIN 17
 
@@ -28,8 +28,11 @@ int matrixMap[moduleHeight][moduleWidth] = {
 
 
 //Not every matrix will have the same orientation (matrices may be rotated 90, 180, or 270 degrees from each other)
-//Properly oriented matrices will show a line of color wiping from left to right
-//If a matrix does not show a left to right color wipe, you will have to change it's orientation so it is consistent with the rest of the display.
+//Properly oriented matrices will show a line of color wiping from left to right if their orientation is 0
+//If a matrix shows any of the following color wipes, change it's orientation to the corresponding number:
+//Top to Bottom: 1
+//Right to Left: 2
+//Bottom to Top: 3
 int orientation[moduleHeight * moduleWidth] = { 0, 0, 0, 1 };
 
 void fadeAll(uint8_t scale = 250)
@@ -72,7 +75,7 @@ uint16_t XY( uint16_t x, uint16_t y)
 
 void setup() {
   Serial.begin(115200);
-  LEDS.addLeds<APA102, DATA_PIN, CLOCK_PIN, BGR>(matrix, NUM_LEDS);
+  LEDS.addLeds<APA102, DATA_PIN, CLOCK_PIN, BGR, DATA_RATE_MHZ(1)>(matrix, NUM_LEDS);
   LEDS.setBrightness(32);
 }
 
@@ -86,6 +89,7 @@ void loop() {
       // Set the i'th led to the current hue
       matrix[XY(x, y)] = CHSV(hue, 150, 255); //display the current hue, then increment it.
       FastLED.show();
+      delay(20);
     }
     fadeAll(127);//Reduce the brightness of all LEDs so our LED's fade off with every frame.
     hue++;
