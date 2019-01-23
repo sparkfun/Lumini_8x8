@@ -74,7 +74,7 @@ uint16_t XY( uint16_t x, uint16_t y)
 }
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(115200);  
   LEDS.addLeds<APA102, DATA_PIN, CLOCK_PIN, BGR, DATA_RATE_MHZ(1)>(matrix, NUM_LEDS);
   LEDS.setBrightness(32);
 }

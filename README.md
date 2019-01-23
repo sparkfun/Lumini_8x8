@@ -1,41 +1,26 @@
-SparkFun <PRODUCT NAME>
+SparkFun LuMini 8x8 Matrix
 ========================================
 
-![SparkFun Part Name](URL for picture of part)
+![LuMini 8x8](https://cdn.sparkfun.com/r/500-500/assets/parts/1/3/3/8/1/15047-SparkFun_LuMini_LED_Matrix_-_8x8__APA102-2020_-01.jpg)
 
-[*SparkFun Part Name (SKU)*](URL for product on Sparkfun.com)
+[*SparkFun LuMini LED matrix (COM-15047)*](https://www.sparkfun.com/products/15047)
 
-<Basic description of the part.>
+The LuMini 8x8 Matrix is a great way to add a square of light to just about anything, or even make a screen of a custom shape. The LuMini product line uses the same LED used on our Lumenati boards, the APA102, just in a smaller, 2.0x2.0 mm package. This allows for incredibly tight pixel densities, and thus, a screen with less pixelation. 
 
 Repository Contents
 -------------------
 
-* **/Documentation** - Data sheets, additional product information
-* **/Enclosure** - Enclosure files 
 * **/Firmware** - Example code 
 * **/Hardware** - Eagle design files (.brd, .sch)
-* **/Libraries** - Libraries for use with the <PRODUCT NAME>
 * **/Production** - Production panel files (.brd)
-* **/Software** - Related software for the <PRODUCT NAME>
 
 Documentation
 --------------
-* **[Library](GitHub library URL)** - <LANGUAGE> library for the <PRODUCT NAME>.
-* **[Hookup Guide](Learn.SparkFun URL)** - Basic hookup guide for the <PRODUCT NAME>.
-* **[SparkFun Fritzing repo](https://github.com/sparkfun/Fritzing_Parts)** - Fritzing diagrams for SparkFun products.
-* **[SparkFun 3D Model repo](https://github.com/sparkfun/3D_Models)** - 3D models of SparkFun products. 
-* **[SparkFun Graphical Datasheets](https://github.com/sparkfun/Graphical_Datasheets)** -Graphical Datasheets for various SparkFun products.
+* **[Hookup Guide](https://learn.sparkfun.com/tutorials/lumini-8x8-matrix-hookup-guide)** - Basic hookup guide for the LuMini 8x8 LED Matrix.
 
 Product Versions
 ----------------
-* [Part SKU](part URL)- Basic part and short description here
-* [Retail part SKU] (retail URL)- Retail packaging of standard description here
-* [Any other parts this repo covers](any other URLs) - Description of said parts
-
-Version History
----------------
-* [vExxFxxZxxHxxLxxSxx](URL for tag specific to this version) - Description 
-* [vEyyFyyZyyHyyLyySyy](URL for tag specific to this version) - Description
+* [COM-15047](https://www.sparkfun.com/products/15047)- 8x8 matrix of APA102 LED's packed into a single square inch.
 
 License Information
 -------------------
@@ -49,5 +34,3 @@ If you have any questions or concerns on licensing, please contact techsupport@s
 Distributed as-is; no warranty is given.
 
 - Your friends at SparkFun.
-
-_<COLLABORATION CREDIT>_
